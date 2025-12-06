@@ -1,0 +1,10 @@
+#!/bin/bash
+file="$1"
+name="$2"
+temp=".anctemp"
+sed '/^[^ \t]/d' $file > $temp
+cp /usr/local/lib/aneoc.c acexecs.c
+cat $temp >> acexecs.c
+echo "}" >> acexecs.c
+gcc acexecs.c -o $name
+
