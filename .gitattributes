@@ -1,1 +1,3 @@
-*.acl linguist-language=AneoC
+*.acl linguist-detectable=true linguist-language=AneoC
+.gitattributes linguist-generated=false
+
