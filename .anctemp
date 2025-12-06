@@ -1,0 +1,9 @@
+	stf();           // start point
+	fso();           // flush stdout
+
+	msg("Hello!");   // say hi
+	nln();           // make new line
+	
+	fso();           // flush stdout
+	ret(0);          // return
+
