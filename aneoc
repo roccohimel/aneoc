@@ -1,7 +1,7 @@
 #!/bin/bash
 file="$1"
 name="$2"
-temp=".anctemp"
+temp=".acltemp"
 sed '/^[^ \t]/d' $file > $temp
 cp /usr/local/lib/aneoc.c acexecs.c
 cat $temp >> acexecs.c

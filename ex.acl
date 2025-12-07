@@ -1,11 +1,13 @@
-init:                    // tag
-	stf();           // start point
-	fso();           // flush stdout
-
-test:                    // tag
-	msg("Hello!");   // say hi
-	nln();           // make new line
+init:                        // tag
+	stf();               // start point
+	fso();               // flush stdout
+	int it = adi(3, 4);  // add 3 and 4
+test:                        // tag
+	msg("Hello!");       // say hi
+	nln();               // make new line
+	msi(it);             // print the sum
+	nln();               // make another new line
 	
-	fso();           // flush stdout
-	ret(0);          // return
+	fso();               // flush stdout
+	ret(0);              // return
 

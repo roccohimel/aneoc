@@ -5,6 +5,7 @@
 
 #define msg printf
 #define mks sprintf
+#define loop while
 
 int ret(int val) {
 	return val;
@@ -67,12 +68,5 @@ int fac(int x) {
 	return x * fac(x - 1);
 }
 
-void inpi(int vi) {
-	scanf("%d", &vi);
-}
-
-void inps(char *vs) {
-	scanf("%s", vs);
-}
 
 int main() {
